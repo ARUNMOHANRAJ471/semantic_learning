@@ -1,0 +1,182 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <title>Semantic UI</title>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.7/semantic.min.css">
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js" charset="utf-8"></script>
+   <script src='https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.7/semantic.min.js' charset="utf-8"></script>
+ </head>
+ <body>
+    <!-- <div class="ui buttons">
+      <button class="ui button"><i class="play icon"></i></button>
+      <button class="ui button"><i class="pause icon"></i></button>
+      <button class="ui button"><i class="stop icon"></i></button>
+      <button class="ui loading button">loading</button>
+    </div> --> <!--semanticUI grouping buttons-->
+
+    <div class="ui icon menu labeled">
+      <div class="item right" style="border-right:1px solid lightgrey"><i class='home icon'></i>home</div>
+      <div class="item"><i class='info icon'></i>about</div>
+      <div class="item"><i class='users icon'></i>contact</div>
+      <div class="item"><i class='sign in icon'></i>SignIn</div>
+    </div>   <!-- semanticUI header menu with icons-->
+
+<!--<div class="ui container">
+    <div class="ui pagination menu">
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+      <div class="item">4</div>
+      <div class="item disabled">..</div>
+      <div class="item">8</div>
+    </div>
+  </div> --> <!-- semanticUI pagination -->
+
+    <!-- <div class="ui container ">
+      <div class="ui styled fluid accordion">
+        <div class="title"><i class="icon dropdown"></i>What is Lorem Ipsum?</div>
+        <div class="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error deserunt, in nobis nostrum ipsum iusto ullam sint dignissimos facere! Iure deleniti tempore odit reprehenderit dolor doloribus reiciendis nesciunt perferendis recusandae.</div>
+
+          <div class="title "><i class="icon dropdown"></i>What is Lorem Ipsum?</div>
+          <div class="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error deserunt, in nobis nostrum ipsum iusto ullam sint dignissimos facere! Iure deleniti tempore odit reprehenderit dolor doloribus reiciendis nesciunt perferendis recusandae.</div>
+
+            <div class="title"><i class="icon dropdown"></i>What is Lorem Ipsum?</div>
+            <div class="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error deserunt, in nobis nostrum ipsum iusto ullam sint dignissimos facere! Iure deleniti tempore odit reprehenderit dolor doloribus reiciendis nesciunt perferendis recusandae.</div>
+          </div>
+    </div>
+<script type="text/javascript">
+  $('.ui.accordion').accordion();
+</script> -->   <!-- accordion using jQuery and semanticUI -->
+  <!-- <div class="ui container">
+    <div class="ui segment"  style="height:500px">
+      <div class="ui dimmer">
+        <div class="content">
+          <div class="center">
+            <i class="icon warning"></i>
+            Warning
+          </div>
+        </div>
+      </div>
+    </div>
+    <button id="btn" class='ui button'>toggle</button>
+  </div>
+  <script type="text/javascript">
+    $('#btn').click(function () {
+      $('.ui.dimmer').dimmer('toggle');
+    });
+  </script>  -->
+  <!-- accordion using jQuery and semanticUI -->
+
+<!-- <div class="ui container">
+  <div class="ui search">
+    <input class='prompt' type="text" placeholder="search">
+    <div class="results"></div>
+  </div>
+</div>
+<script type="text/javascript">
+  content = [{title:"arun",url:"https://facebook.com/arun.mohan.3956",description:"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."},
+  {title:"mohan",description:"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."},
+{title:"raj",description:"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."},
+{title:"bala",description:"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."}];
+  $('.ui.search').search({
+    source:content,
+    searchFullText:false
+  });
+</script> -->   <!-- search locally -->
+
+<!-- <div class="ui container">
+  <div class="ui search">
+    <input class='prompt' type="text" placeholder="search">
+    <div class="results"></div>
+  </div>
+</div>
+<script type="text/javascript">
+$('.ui.search').search({
+  apiSettings:{
+    url:"https://api.github.com/search/repositories?q={query}"
+  },
+  fields:{
+    results:"items",
+    title:'name',
+    description:'description',
+    url: 'html_url'
+  }
+});
+</script> -->   <!-- search in github using semanticUI and jQuery-->
+
+
+  <!-- <div class="ui container">
+    <select class="ui multiple selection search dropdown" name="gender" id="gender">
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+    </select>
+  </div>
+  <script type="text/javascript">
+    $('.ui.selection.dropdown').dropdown();
+  </script> --> <!-- multiple selection dropdown-->
+
+  <!-- <div class="ui sidebar vertical left inverted  menu">
+    <a href="#" class="item">Sunday</a>
+    <a href="#" class="item">Monday</a>
+    <a href="#" class="item">Tuesday</a>
+    <a href="#" class="item">Wednesday</a>
+    <a href="#" class="item">Thursday</a>
+    <a href="#" class="item">Friday</a>
+    <a href="#" class="item">Saturday</a>
+    </div>
+
+    <div class="ui basic icon top fixed menu"><a href="#" id="toggle" class="item">Menu</a></div>
+    <div class="pusher"style='padding-top:50px;'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+
+  <script type="text/javascript">
+    $('#toggle').click(function(){
+      $('.ui.sidebar').sidebar('toggle');
+    }
+  );
+</script> -->  <!-- sidebar menu using semantic-ui and jquery -->
+
+  <!-- <div class="ui shape fluid">
+    <div class="sides">
+      <div class="active side">
+        <div class="ui raised segment">
+          First Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum aliquid adipisci incidunt excepturi nesciunt numquam, eos laudantium odit, illum! Veniam placeat eaque adipisci quibusdam eveniet, sint incidunt harum accusantium laborum?
+        </div>
+      </div>
+        <div class="side">
+          <div class="ui raised segment">
+            Second
+          </div>
+        </div>
+          <div class="side">
+            <div class="ui raised segment">
+              Third
+            </div>
+          </div>
+            <div class="side">
+              <div class="ui raised segment">
+                Four
+              </div>
+            </div>
+              <div class="side">
+                <div class="ui raised segment">
+                  Five
+                </div>
+              </div>
+                <div class="side">
+                  <div class="ui raised segment">
+                    Six
+                  </div>
+                </div>
+    </div>
+  </div><br>
+  <button class="ui teal button" id='flip'>Flip</button>
+  <script type="text/javascript">
+    $('#flip').click(function(){
+      $('.ui.shape').shape('flip right');
+    });
+  </script> -->   <!-- animation -->
+ </body>
+ </html>
